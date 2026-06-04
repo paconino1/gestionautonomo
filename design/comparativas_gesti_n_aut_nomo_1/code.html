@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Comparativas - Gestión Autónomo</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&amp;family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-primary-fixed-variant": "#364768",
+                      "surface-container-highest": "#e1e3e4",
+                      "inverse-primary": "#b6c6ef",
+                      "surface-tint": "#4e5e81",
+                      "error-container": "#ffdad6",
+                      "on-secondary-fixed": "#002106",
+                      "surface-variant": "#e1e3e4",
+                      "primary-container": "#1a2b4b",
+                      "primary": "#031635",
+                      "inverse-on-surface": "#f0f1f2",
+                      "on-tertiary-fixed": "#321300",
+                      "surface-container": "#edeeef",
+                      "on-background": "#191c1d",
+                      "on-error": "#ffffff",
+                      "on-secondary": "#ffffff",
+                      "navy-deep": "#1a2b4b",
+                      "primary-fixed": "#d8e2ff",
+                      "on-secondary-container": "#007327",
+                      "secondary": "#006e25",
+                      "surface-container-high": "#e7e8e9",
+                      "text-muted": "#718096",
+                      "surface-container-low": "#f3f4f5",
+                      "on-primary": "#ffffff",
+                      "error": "#ba1a1a",
+                      "outline": "#75777f",
+                      "cta-orange": "#fd7e14",
+                      "primary-fixed-dim": "#b6c6ef",
+                      "secondary-fixed": "#83fc8e",
+                      "secondary-container": "#80f98b",
+                      "surface": "#f8f9fa",
+                      "tertiary-container": "#4a1f00",
+                      "success-green": "#28a745",
+                      "surface-container-lowest": "#ffffff",
+                      "text-main": "#2d3748",
+                      "outline-variant": "#c5c6cf",
+                      "on-surface-variant": "#44474e",
+                      "on-error-container": "#93000a",
+                      "on-primary-fixed": "#081b3a",
+                      "border-light": "#e2e8f0",
+                      "on-secondary-fixed-variant": "#00531a",
+                      "surface-bright": "#f8f9fa",
+                      "tertiary-fixed-dim": "#ffb68a",
+                      "on-tertiary-fixed-variant": "#743500",
+                      "tertiary": "#2a0f00",
+                      "inverse-surface": "#2e3132",
+                      "on-surface": "#191c1d",
+                      "on-tertiary-container": "#e97000",
+                      "secondary-fixed-dim": "#66df75",
+                      "background": "#f8f9fa",
+                      "tertiary-fixed": "#ffdbc8",
+                      "on-primary-container": "#8293b8",
+                      "on-tertiary": "#ffffff",
+                      "surface-dim": "#d9dadb"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "gutter": "2.4rem",
+                      "content-max-width": "1200px",
+                      "base": "1.0rem",
+                      "article-max-width": "720px",
+                      "margin-desktop": "4.0rem",
+                      "margin-mobile": "1.6rem"
+              },
+              "fontFamily": {
+                      "display-lg": [
+                              "Montserrat"
+                      ],
+                      "headline-lg-mobile": [
+                              "Montserrat"
+                      ],
+                      "body-md": [
+                              "Inter"
+                      ],
+                      "headline-lg": [
+                              "Montserrat"
+                      ],
+                      "label-md": [
+                              "Inter"
+                      ],
+                      "body-lg": [
+                              "Inter"
+                      ],
+                      "headline-md": [
+                              "Montserrat"
+                      ]
+              },
+              "fontSize": {
+                      "display-lg": [
+                              "4.8rem",
+                              {
+                                      "lineHeight": "1.2",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "2.8rem",
+                              {
+                                      "lineHeight": "1.3",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body-md": [
+                              "1.6rem",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-lg": [
+                              "3.2rem",
+                              {
+                                      "lineHeight": "1.3",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "label-md": [
+                              "1.4rem",
+                              {
+                                      "lineHeight": "1.2",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-lg": [
+                              "1.8rem",
+                              {
+                                      "lineHeight": "1.8",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-md": [
+                              "2.4rem",
+                              {
+                                      "lineHeight": "1.4",
+                                      "fontWeight": "600"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+</head>
+<body class="bg-background text-on-background font-body-md min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<nav class="bg-surface-container-lowest border-b border-light flat no shadows sticky top-0 z-50 flex justify-between items-center w-full px-margin-desktop max-w-content-max-width mx-auto py-4">
+<div class="font-display-lg text-headline-md font-bold text-navy-deep">
+            Gestión Autónomo
+        </div>
+<div class="hidden md:flex items-center gap-8">
+<ul class="flex gap-6 font-label-md text-label-md">
+<li><a class="text-on-surface-variant hover:text-cta-orange transition-colors duration-200" href="#">Home</a></li>
+<li><a class="text-primary border-b-2 border-cta-orange pb-1 opacity-80 transition-opacity" href="#">Comparativas</a></li>
+<li><a class="text-on-surface-variant hover:text-cta-orange transition-colors duration-200" href="#">Guías</a></li>
+</ul>
+<button class="bg-secondary text-on-secondary px-6 py-2 rounded font-label-md text-label-md hover:bg-on-secondary-fixed-variant transition-colors shadow-sm">
+                Darse de Alta
+            </button>
+</div>
+<!-- Mobile Menu Icon (Placeholder) -->
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</nav>
+<!-- Main Content -->
+<main class="flex-grow w-full max-w-content-max-width mx-auto px-margin-mobile md:px-margin-desktop py-gutter">
+<!-- Breadcrumbs -->
+<nav aria-label="Breadcrumb" class="flex text-text-muted font-body-md text-sm mb-6">
+<ol class="inline-flex items-center space-x-1 md:space-x-3">
+<li class="inline-flex items-center">
+<a class="inline-flex items-center hover:text-primary transition-colors" href="#">
+                        Home
+                    </a>
+</li>
+<li>
+<div class="flex items-center">
+<span class="material-symbols-outlined text-sm mx-1" data-icon="chevron_right">chevron_right</span>
+<span class="text-primary font-semibold">Comparativas</span>
+</div>
+</li>
+</ol>
+</nav>
+<!-- Page Header -->
+<header class="mb-gutter">
+<h1 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-navy-deep mb-4">
+                Comparativas de Software de Facturación
+            </h1>
+<p class="font-body-lg text-body-lg text-text-main max-w-3xl">
+                Análisis detallados y cara a cara de las principales herramientas del mercado para ayudarte a elegir la mejor solución para la gestión de tu negocio como autónomo.
+            </p>
+</header>
+<!-- Top Ad Banner Placeholder -->
+<div class="w-full bg-surface-container-high border border-light rounded-lg p-4 mb-gutter flex flex-col items-center justify-center min-h-[90px] text-center">
+<span class="text-text-muted text-xs uppercase tracking-wider font-label-md mb-1">Publicidad</span>
+<div class="w-[728px] max-w-full h-[90px] bg-surface-dim border border-dashed border-outline-variant flex items-center justify-center text-text-muted">
+                AdSpace (728x90)
+            </div>
+</div>
+<!-- Content Layout: Main + Sidebar -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Main Content Area (Articles) -->
+<div class="md:col-span-8 space-y-8">
+<!-- Article Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+<!-- Article Card 1 -->
+<article class="bg-surface-container-lowest border border-light rounded-lg overflow-hidden hover:shadow-md transition-shadow duration-300 group cursor-pointer flex flex-col h-full">
+<div class="aspect-video w-full bg-surface-container relative overflow-hidden">
+<img class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" data-alt="A modern, minimalist workspace viewed from above. A sleek laptop displays vibrant charts and graphs on its screen. A notebook with a pen rests beside it, bathed in soft, natural daylight filtering through a nearby window. The color palette emphasizes clean whites, deep navy blues, and subtle metallic accents, conveying a professional, efficient, and institutional atmosphere suitable for business management software." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAt-ECjaF4zXaFR4jW5I8zcp5SjNT2xuAfFs_J2LY2eDaF0F1WE9L5GiDpBOYmIoSX4JWkglv0rDY1iYnT4bTTHJ-myod5x8rf9lc0zlpoSzb5npZsdqCq_8N5hwHSYxXzDCW9H3jspwEsegLBgbGkHkuueSZhUjhdrlgzmHs2w7nzZ5h7Rk2607iXIoXfebAHWMQY0hZTePKvcRyOVvafOyQ-RT5vgwyU0X68mKHVdyOr0ot8fWal4kiT9xtpoAKKu2DVypirzIZc"/>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<span class="text-xs font-label-md text-label-md text-secondary uppercase tracking-wider mb-2">Cara a Cara</span>
+<h2 class="font-headline-md text-headline-md text-navy-deep mb-3 line-clamp-2 group-hover:text-primary-container transition-colors">Holded vs FacturaDirecta: ¿Cuál elegir en 2024?</h2>
+<p class="font-body-md text-body-md text-text-main line-clamp-3 mb-4 flex-grow">
+                                Comparamos en detalle las funcionalidades, precios y facilidad de uso de dos de los gigantes del software de facturación en España. Descubre cuál se adapta mejor a tu volumen de facturación.
+                            </p>
+<a class="text-primary font-label-md text-label-md flex items-center gap-1 group-hover:underline mt-auto" href="#">
+                                Leer comparativa <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Article Card 2 -->
+<article class="bg-surface-container-lowest border border-light rounded-lg overflow-hidden hover:shadow-md transition-shadow duration-300 group cursor-pointer flex flex-col h-full">
+<div class="aspect-video w-full bg-surface-container relative overflow-hidden">
+<img class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" data-alt="A close-up shot of a person's hands operating a sleek calculator on a pristine white desk. Beside the calculator are cleanly printed financial documents and a modern pen. The lighting is bright and high-key, creating a corporate, minimalist aesthetic. The image utilizes a color palette of crisp whites, subtle grays, and a touch of professional green, evoking a sense of financial clarity and efficient tax management." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHl9IjBOaJ9y2FxqAUcJcHZX0lpDY9XueQnIQbzDhfyIIWaP5qj3wu4FnqeTxEYPEcdaE2dfp_6Li-PLNk9xMKOBvgXMQVtxlkUw1ve1WgInnLcyZHMasrHxc8GDwWjldWjVaRkT3ob-kT5g0_nFukb3JequLRoz_SkOxO2gwncGOsRT4hbdBcp-7FMpZaOOP8p-atKQuFvS0o-Xb6a71Vg5EkFq9oUgFHBUYea7yU9psjVGTYKJ3O5fpBCsGYS23OEGU4CeUqGN8"/>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<span class="text-xs font-label-md text-label-md text-secondary uppercase tracking-wider mb-2">Top Herramientas</span>
+<h2 class="font-headline-md text-headline-md text-navy-deep mb-3 line-clamp-2 group-hover:text-primary-container transition-colors">El mejor software de facturación gratuito para autónomos</h2>
+<p class="font-body-md text-body-md text-text-main line-clamp-3 mb-4 flex-grow">
+                                Si acabas de darte de alta y buscas reducir costes, analizamos las opciones 100% gratuitas que cumplen con la normativa de TicketBAI y la Ley Antifraude.
+                            </p>
+<a class="text-primary font-label-md text-label-md flex items-center gap-1 group-hover:underline mt-auto" href="#">
+                                Leer comparativa <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Article Card 3 -->
+<article class="bg-surface-container-lowest border border-light rounded-lg overflow-hidden hover:shadow-md transition-shadow duration-300 group cursor-pointer flex flex-col h-full">
+<div class="aspect-video w-full bg-surface-container relative overflow-hidden">
+<img class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" data-alt="A conceptual image of digital payments and secure transactions. A modern smartphone screen displaying a secure payment interface is in focus, resting on a clean, light-colored wooden surface. Nearby is a sleek, contactless credit card. The lighting is bright and evenly distributed, highlighting the modern technology. The color palette features stark whites, deep institutional navy blue, and a subtle orange accent, reflecting a trustworthy and efficient digital management environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRpSXAiLrmej9Kns-sBtYrxzN05eViK6xF0SkHvdOQ1I2yhiIDMyaSHQQf6GaVoXgIRbPXjDxBcuGdYJdnnhH3c4Uj0Lh8RxdWem3mk-a2WZqh5fGNAw2rS4IdheEH80mggbw05g6ZTP0YIrsNnQPxgUR1z6_CmQfVfO6Pz4VsteJ4VqnVZ178L4WopBPptHnPwAg6sD-Yr3T-AADD6vyDlkJuKaA-wEvn6HXs3_dZYOVD5RrdVtUTb-fvss2H7pYVJ2l4k_7CjmQ"/>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<span class="text-xs font-label-md text-label-md text-secondary uppercase tracking-wider mb-2">Análisis de Mercado</span>
+<h2 class="font-headline-md text-headline-md text-navy-deep mb-3 line-clamp-2 group-hover:text-primary-container transition-colors">Quipu vs Contasimple: Alternativas para la gestión fiscal</h2>
+<p class="font-body-md text-body-md text-text-main line-clamp-3 mb-4 flex-grow">
+                                Analizamos dos herramientas enfocadas en simplificar la presentación de impuestos. ¿Cuál ofrece mejor integración con tu banco y facilita más la vida al trimestre?
+                            </p>
+<a class="text-primary font-label-md text-label-md flex items-center gap-1 group-hover:underline mt-auto" href="#">
+                                Leer comparativa <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Article Card 4 -->
+<article class="bg-surface-container-lowest border border-light rounded-lg overflow-hidden hover:shadow-md transition-shadow duration-300 group cursor-pointer flex flex-col h-full">
+<div class="aspect-video w-full bg-surface-container relative overflow-hidden">
+<img class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" data-alt="A professional businessman in a tailored navy suit reviewing a document on a sleek digital tablet. He is seated in a modern, well-lit corporate office with expansive glass windows in the background. The aesthetic is clean, minimalist, and highly institutional. The lighting is bright and crisp. The dominant colors are sharp whites, professional navy blues, and subtle metallic grays, conveying authority and trust in business management tools." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGSBhnNFpNSbe9Xlm80nQmP5gKL7wzcisSNwteQ4EGZBIZVEj1uDrhcmEZbeVIClxKC9lFiYLwt2nN4cTXMggYSBSGHlatxSEFXbv-wvqNwg91lQeizYwQuj6iHoVGBTQtSFGh5C0Eq_aMa7_ge-aTMIt6yZMCPB2sw3e3Q0WGICddZzWTAtO0Ocw41VhFWVOqDiHjcI6AUM2tu9LfpCYSXzZo48hdXs2vy00k_os6TOEd1XAd8KDOV3_0HqPnL-lB9GYWralgY48"/>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<span class="text-xs font-label-md text-label-md text-secondary uppercase tracking-wider mb-2">Guía de Compra</span>
+<h2 class="font-headline-md text-headline-md text-navy-deep mb-3 line-clamp-2 group-hover:text-primary-container transition-colors">ERP vs Programa de Facturación Básico: ¿Qué necesitas?</h2>
+<p class="font-body-md text-body-md text-text-main line-clamp-3 mb-4 flex-grow">
+                                No pagues por funcionalidades que no vas a usar. Te ayudamos a identificar en qué punto se encuentra tu negocio y qué tipo de software es la inversión correcta.
+                            </p>
+<a class="text-primary font-label-md text-label-md flex items-center gap-1 group-hover:underline mt-auto" href="#">
+                                Leer comparativa <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</article>
+</div>
+<!-- Pagination Placeholder -->
+<div class="flex justify-center items-center space-x-2 mt-8 pt-8 border-t border-light">
+<button class="p-2 border border-light rounded hover:bg-surface-container transition-colors text-text-muted flex items-center justify-center disabled:opacity-50">
+<span class="material-symbols-outlined" data-icon="chevron_left">chevron_left</span>
+</button>
+<button class="w-10 h-10 border-2 border-primary bg-primary text-on-primary font-label-md text-label-md rounded flex items-center justify-center">1</button>
+<button class="w-10 h-10 border border-light bg-surface-container-lowest text-text-main hover:bg-surface-container font-label-md text-label-md rounded transition-colors flex items-center justify-center">2</button>
+<button class="w-10 h-10 border border-light bg-surface-container-lowest text-text-main hover:bg-surface-container font-label-md text-label-md rounded transition-colors flex items-center justify-center">3</button>
+<span class="text-text-muted">...</span>
+<button class="w-10 h-10 border border-light bg-surface-container-lowest text-text-main hover:bg-surface-container font-label-md text-label-md rounded transition-colors flex items-center justify-center">8</button>
+<button class="p-2 border border-light rounded hover:bg-surface-container transition-colors text-text-main flex items-center justify-center">
+<span class="material-symbols-outlined" data-icon="chevron_right">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Sidebar -->
+<aside class="md:col-span-4 space-y-8">
+<!-- AdSense Sidebar Widget -->
+<div class="bg-surface-container-high border border-light rounded-lg p-4 flex flex-col items-center justify-center min-h-[250px] text-center sticky top-[100px]">
+<span class="text-text-muted text-xs uppercase tracking-wider font-label-md mb-2">Publicidad</span>
+<div class="w-[300px] max-w-full h-[250px] bg-surface-dim border border-dashed border-outline-variant flex items-center justify-center text-text-muted">
+                        AdSpace (300x250)
+                    </div>
+</div>
+<!-- Affiliate CTA Card -->
+<div class="bg-surface border border-light rounded-lg p-6 shadow-sm">
+<h3 class="font-headline-md text-headline-md text-navy-deep mb-3">Calculadora de Cuotas 2024</h3>
+<p class="font-body-md text-body-md text-text-main mb-4">
+                        Averigua exactamente cuánto tendrás que pagar de cuota de autónomos con el nuevo sistema por tramos de ingresos reales.
+                    </p>
+<button class="w-full bg-cta-orange text-on-primary py-3 rounded font-label-md text-label-md font-bold hover:bg-[#e67300] transition-colors flex justify-center items-center gap-2">
+                        Calcular mi cuota <span class="material-symbols-outlined" data-icon="calculate">calculate</span>
+</button>
+</div>
+<!-- Popular Categories Widget -->
+<div class="bg-surface-container-lowest border border-light rounded-lg p-6">
+<h3 class="font-headline-md text-headline-md text-navy-deep border-b border-light pb-2 mb-4">Otras Categorías</h3>
+<ul class="space-y-3 font-body-md text-body-md">
+<li>
+<a class="text-text-main hover:text-primary transition-colors flex items-center justify-between group" href="#">
+<span>Impuestos y Fiscalidad</span>
+<span class="material-symbols-outlined text-sm text-text-muted group-hover:text-primary" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</li>
+<li>
+<a class="text-text-main hover:text-primary transition-colors flex items-center justify-between group" href="#">
+<span>Trámites y Alta</span>
+<span class="material-symbols-outlined text-sm text-text-muted group-hover:text-primary" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</li>
+<li>
+<a class="text-text-main hover:text-primary transition-colors flex items-center justify-between group" href="#">
+<span>Ayudas y Subvenciones</span>
+<span class="material-symbols-outlined text-sm text-text-muted group-hover:text-primary" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</li>
+</ul>
+</div>
+</aside>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-low border-t border-light mt-auto">
+<div class="w-full py-12 px-margin-desktop max-w-content-max-width mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="font-display-lg text-headline-md font-bold text-navy-deep">
+                Gestión Autónomo
+            </div>
+<div class="flex flex-wrap justify-center gap-6 font-body-md text-body-md">
+<a class="text-text-muted hover:text-primary underline transition-all focus:outline-none focus:ring-2 focus:ring-primary rounded" href="#">Aviso Legal</a>
+<a class="text-text-muted hover:text-primary underline transition-all focus:outline-none focus:ring-2 focus:ring-primary rounded" href="#">Política de Privacidad</a>
+<a class="text-text-muted hover:text-primary underline transition-all focus:outline-none focus:ring-2 focus:ring-primary rounded" href="#">Cookies</a>
+<a class="text-text-muted hover:text-primary underline transition-all focus:outline-none focus:ring-2 focus:ring-primary rounded" href="#">Contacto</a>
+</div>
+<div class="text-on-surface font-body-md text-body-md text-center md:text-right">
+                © 2024 Gestión Autónomo. Todos los derechos reservados.
+            </div>
+</div>
+</footer>
+</body></html>

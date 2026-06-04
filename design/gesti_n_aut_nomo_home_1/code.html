@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Gestión Autónomo - Inicio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Montserrat:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        html { font-size: 10px; }
+        body { font-size: 1.6rem; }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary-fixed-variant": "#364768",
+                        "surface-container-highest": "#e1e3e4",
+                        "inverse-primary": "#b6c6ef",
+                        "surface-tint": "#4e5e81",
+                        "error-container": "#ffdad6",
+                        "on-secondary-fixed": "#002106",
+                        "surface-variant": "#e1e3e4",
+                        "primary-container": "#1a2b4b",
+                        "primary": "#031635",
+                        "inverse-on-surface": "#f0f1f2",
+                        "on-tertiary-fixed": "#321300",
+                        "surface-container": "#edeeef",
+                        "on-background": "#191c1d",
+                        "on-error": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "navy-deep": "#1a2b4b",
+                        "primary-fixed": "#d8e2ff",
+                        "on-secondary-container": "#007327",
+                        "secondary": "#006e25",
+                        "surface-container-high": "#e7e8e9",
+                        "text-muted": "#718096",
+                        "surface-container-low": "#f3f4f5",
+                        "on-primary": "#ffffff",
+                        "error": "#ba1a1a",
+                        "outline": "#75777f",
+                        "cta-orange": "#fd7e14",
+                        "primary-fixed-dim": "#b6c6ef",
+                        "secondary-fixed": "#83fc8e",
+                        "secondary-container": "#80f98b",
+                        "surface": "#f8f9fa",
+                        "tertiary-container": "#4a1f00",
+                        "success-green": "#28a745",
+                        "surface-container-lowest": "#ffffff",
+                        "text-main": "#2d3748",
+                        "outline-variant": "#c5c6cf",
+                        "on-surface-variant": "#44474e",
+                        "on-error-container": "#93000a",
+                        "on-primary-fixed": "#081b3a",
+                        "border-light": "#e2e8f0",
+                        "on-secondary-fixed-variant": "#00531a",
+                        "surface-bright": "#f8f9fa",
+                        "tertiary-fixed-dim": "#ffb68a",
+                        "on-tertiary-fixed-variant": "#743500",
+                        "tertiary": "#2a0f00",
+                        "inverse-surface": "#2e3132",
+                        "on-surface": "#191c1d",
+                        "on-tertiary-container": "#e97000",
+                        "secondary-fixed-dim": "#66df75",
+                        "background": "#f8f9fa",
+                        "tertiary-fixed": "#ffdbc8",
+                        "on-primary-container": "#8293b8",
+                        "on-tertiary": "#ffffff",
+                        "surface-dim": "#d9dadb"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "gutter": "2.4rem",
+                        "content-max-width": "1200px",
+                        "base": "1.0rem",
+                        "article-max-width": "720px",
+                        "margin-desktop": "4.0rem",
+                        "margin-mobile": "1.6rem"
+                    },
+                    "fontFamily": {
+                        "display-lg": ["Montserrat"],
+                        "headline-lg-mobile": ["Montserrat"],
+                        "body-md": ["Inter"],
+                        "headline-lg": ["Montserrat"],
+                        "label-md": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "headline-md": ["Montserrat"]
+                    },
+                    "fontSize": {
+                        "display-lg": ["4.8rem", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-lg-mobile": ["2.8rem", { "lineHeight": "1.3", "fontWeight": "700" }],
+                        "body-md": ["1.6rem", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-lg": ["3.2rem", { "lineHeight": "1.3", "fontWeight": "700" }],
+                        "label-md": ["1.4rem", { "lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "body-lg": ["1.8rem", { "lineHeight": "1.8", "fontWeight": "400" }],
+                        "headline-md": ["2.4rem", { "lineHeight": "1.4", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-background text-on-surface font-body-md antialiased min-h-screen flex flex-col">
+<!-- TopNavBar Component -->
+<nav class="bg-surface-container-lowest dark:bg-surface-container-lowest border-b border-light dark:border-outline-variant docked full-width top-0 sticky z-50">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop max-w-content-max-width mx-auto py-4">
+<a class="font-display-lg text-headline-md font-bold text-navy-deep dark:text-primary-fixed" href="#">Gestión Autónomo</a>
+<!-- Desktop Nav -->
+<ul class="hidden md:flex space-x-8 items-center">
+<li><a class="font-label-md text-label-md text-primary dark:text-primary-fixed border-b-2 border-cta-orange pb-1 opacity-80 transition-opacity" href="#">Home</a></li>
+<li><a class="font-label-md text-label-md text-on-surface-variant dark:text-on-surface-variant hover:text-cta-orange transition-colors duration-200" href="#">Comparativas</a></li>
+<li><a class="font-label-md text-label-md text-on-surface-variant dark:text-on-surface-variant hover:text-cta-orange transition-colors duration-200" href="#">Guías</a></li>
+</ul>
+<div class="hidden md:flex items-center space-x-4">
+<button class="font-label-md text-label-md text-on-primary bg-secondary hover:bg-on-secondary-fixed-variant transition-colors px-6 py-2 rounded">
+                    Darse de Alta
+                </button>
+</div>
+<!-- Mobile Menu Button -->
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined" style="font-size: 2.4rem;">menu</span>
+</button>
+</div>
+</nav>
+<main class="flex-grow flex flex-col items-center w-full">
+<!-- Hero Section -->
+<section class="w-full bg-surface-container-low py-[4.8rem] md:py-[6.4rem] px-margin-mobile md:px-margin-desktop flex flex-col items-center text-center">
+<div class="max-w-article-max-width">
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile md:font-display-lg md:text-display-lg text-primary mb-6">
+                    Domina la facturación de tu negocio
+                </h1>
+<p class="font-body-lg text-body-lg text-text-muted mb-8">
+                    Comparativas honestas y guías prácticas para autónomos y PYMES en España.
+                </p>
+<button class="font-label-md text-label-md bg-cta-orange text-on-primary hover:bg-tertiary-container transition-colors px-8 py-4 rounded-lg shadow-sm hover:shadow-md">
+                    Ver Comparativas
+                </button>
+</div>
+</section>
+<!-- AdSense Placeholder - After Hero -->
+<div class="w-full max-w-content-max-width mx-auto px-margin-mobile md:px-margin-desktop py-gutter flex justify-center">
+<div class="w-full md:w-[728px] h-[90px] bg-surface-variant border border-light flex items-center justify-center relative">
+<span class="absolute top-1 left-2 text-[1.0rem] text-text-muted">Publicidad</span>
+<span class="text-text-muted">AdSense Placeholder (728x90)</span>
+</div>
+</div>
+<!-- Category Summary Section -->
+<section class="w-full max-w-content-max-width mx-auto px-margin-mobile md:px-margin-desktop py-gutter">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Card 1 -->
+<div class="bg-surface border border-light p-6 rounded-lg hover:shadow-sm transition-shadow group flex flex-col items-start cursor-pointer">
+<span class="material-symbols-outlined text-secondary text-[3.2rem] mb-4">compare_arrows</span>
+<h3 class="font-headline-md text-headline-md text-primary mb-2 group-hover:text-cta-orange transition-colors">Comparativas</h3>
+<p class="font-body-md text-body-md text-text-muted">Análisis detallado de las mejores herramientas del mercado.</p>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface border border-light p-6 rounded-lg hover:shadow-sm transition-shadow group flex flex-col items-start cursor-pointer">
+<span class="material-symbols-outlined text-secondary text-[3.2rem] mb-4">menu_book</span>
+<h3 class="font-headline-md text-headline-md text-primary mb-2 group-hover:text-cta-orange transition-colors">Guías de Facturación</h3>
+<p class="font-body-md text-body-md text-text-muted">Paso a paso para gestionar tus facturas sin errores.</p>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface border border-light p-6 rounded-lg hover:shadow-sm transition-shadow group flex flex-col items-start cursor-pointer">
+<span class="material-symbols-outlined text-secondary text-[3.2rem] mb-4">gavel</span>
+<h3 class="font-headline-md text-headline-md text-primary mb-2 group-hover:text-cta-orange transition-colors">Normativa</h3>
+<p class="font-body-md text-body-md text-text-muted">Actualizaciones fiscales y legales para estar siempre al día.</p>
+</div>
+</div>
+</section>
+<!-- Últimos Artículos Section -->
+<section class="w-full max-w-content-max-width mx-auto px-margin-mobile md:px-margin-desktop py-gutter">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-8 border-b border-light pb-4">Últimos Artículos</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Article Card 1 -->
+<article class="bg-surface border border-light rounded-lg overflow-hidden hover:shadow-md transition-shadow cursor-pointer flex flex-col">
+<div class="h-[200px] w-full bg-surface-variant bg-cover bg-center" data-alt="A modern office desk setup with a laptop displaying charts and graphs, representing financial software. The lighting is bright and clear, reflecting a professional corporate minimalism aesthetic. The color palette emphasizes clean whites, subtle grays, and touches of institutional navy blue. The mood is efficient, organized, and focused on business management." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD2c17UtBPJtQKMjKn0MGmxQOTqcD-6JUQZjX93WBReihAxOCSbPvrV1C9Zgf-o9-luCUctzWvynpgs1qKMCb62Lm-hiE1jr8iKVWwqlkpE6JvGXtI4QyHdpVLb_4QjggbbQKuecEEzRVuqwUf0EM9fpr-YF3ChWJnZ9BU3JsigIpq2RLXa9Qh4awO3HSb0wJgjlVPGhQosV_dg8itMlHRNOmFjMg3kFNiJGHHSvAtx-yLQG61FZXPwcbPymBlOy6IrQv81Y8OHtrk');"></div>
+<div class="p-6 flex-grow flex flex-col items-start">
+<span class="text-[1.2rem] font-bold text-secondary uppercase tracking-wider mb-2">Software</span>
+<h3 class="font-headline-md text-[2.0rem] leading-tight text-primary mb-3">Mejor Software de Facturación 2024</h3>
+<p class="font-body-md text-body-md text-text-muted flex-grow">Analizamos las 5 principales herramientas de facturación para autónomos este año, comparando precios, funcionalidades y usabilidad.</p>
+</div>
+</article>
+<!-- Article Card 2 -->
+<article class="bg-surface border border-light rounded-lg overflow-hidden hover:shadow-md transition-shadow cursor-pointer flex flex-col">
+<div class="h-[200px] w-full bg-surface-variant bg-cover bg-center" data-alt="A close-up view of a person carefully signing a legal document with a premium pen. The lighting is soft yet professional, highlighting the details of the paper and hands. The setting implies a corporate or legal environment, aligning with the institutional and authoritative brand personality. Colors are muted and serious." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCcqlm7KjJnauVyd5fDHVfO7TkzJY5PFsjwvqgmPJIRLpYenPAEst-Dk7nNq62dXCbKg5Yh7Y-bjV7OgpkhRi_NjQWh6LjckH8mIJFBEX-q5QTOMk5_VkEuuXRgVziNxtDvI5O_sdtpG6Z-0tSIX4PHVa57wOdIoZF331kFa1oG1qxeQFL49b5D-qjboJt2ne03jLhCuQAWmksSN6n9UYR5oTXY6RytaXBqqocRLc_fo7Zm9v-5yQEJad_Bx-nKpQqm1nbsw37xnDs');"></div>
+<div class="p-6 flex-grow flex flex-col items-start">
+<span class="text-[1.2rem] font-bold text-cta-orange uppercase tracking-wider mb-2">Legal</span>
+<h3 class="font-headline-md text-[2.0rem] leading-tight text-primary mb-3">Novedades Cuota Autónomos</h3>
+<p class="font-body-md text-body-md text-text-muted flex-grow">Todo lo que necesitas saber sobre el nuevo sistema de cotización por ingresos reales que entra en vigor este año.</p>
+</div>
+</article>
+<!-- Article Card 3 -->
+<article class="bg-surface border border-light rounded-lg overflow-hidden hover:shadow-md transition-shadow cursor-pointer flex flex-col">
+<div class="h-[200px] w-full bg-surface-variant bg-cover bg-center" data-alt="A neat stack of receipts and invoices next to a calculator on a clean white desk. The scene is illuminated by natural light, creating a high-key, modern minimalist feel. The color palette focuses on crisp whites and subtle shadows, conveying functional clarity and organization necessary for tax management." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAC8YLkD03PV0XQqiIMcTe8FqY7K7EWLkuV0S5qMiv1IyQYJxuMGnfnClY8GHZ3S63QI4ElbKCnQvFCVC9pkdgBRq17Xr7hAJKSOtw6TpKXnmEg1Efhegp6GKdv1oIbhqnS2OZU8dAbQe6iB-3S2Bj5dEB3YUeqvbFgmoAty8QRmKArigVqbG2JBVZTLHolSaQ-JwOcfSSnSKLln4SlX3pzwYojbKj0evnNitz9ndhXHScrSXmGwscCBgmjREOPznldQTOQ8I0VWr4');"></div>
+<div class="p-6 flex-grow flex flex-col items-start">
+<span class="text-[1.2rem] font-bold text-secondary uppercase tracking-wider mb-2">Guía</span>
+<h3 class="font-headline-md text-[2.0rem] leading-tight text-primary mb-3">Gastos Deducibles Esenciales</h3>
+<p class="font-body-md text-body-md text-text-muted flex-grow">Lista completa de los gastos que puedes deducirte como profesional independiente para optimizar tu declaración trimestral.</p>
+</div>
+</article>
+<!-- Article Card 4 -->
+<article class="bg-surface border border-light rounded-lg overflow-hidden hover:shadow-md transition-shadow cursor-pointer flex flex-col">
+<div class="h-[200px] w-full bg-surface-variant bg-cover bg-center" data-alt="A computer screen displaying complex data analytics and financial dashboards. The aesthetic is clean and corporate, utilizing deep navy blues and sharp contrasts. The lighting emphasizes the digital nature of the tools. It represents high information density and efficient business tracking." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCPredEXYbVAvZMAFHMRo76UxHxqwx91joyaGP0Naej3lKYxkb5nNWFow7bhq3VUffZSUc9Bfhqm_61SO_PslUu9-iFNpNqUwNADxnaTdBHx4URIFasAD3paCUbLtvBEeUATmbSjKz6s62AUeuyy1W077fSrQBuAnnAubJuXMSg9RTPfiHv5q2CTVF_c_JE952MM4ZK5UWlUMmkyUOzP3nGnqBeRlFOhlaCLGl5SQJf1rnFhCF-KZ5hWYtdVfcM-85zQHY7xrLaGbY');"></div>
+<div class="p-6 flex-grow flex flex-col items-start">
+<span class="text-[1.2rem] font-bold text-secondary uppercase tracking-wider mb-2">Herramientas</span>
+<h3 class="font-headline-md text-[2.0rem] leading-tight text-primary mb-3">Holded vs Quipu</h3>
+<p class="font-body-md text-body-md text-text-muted flex-grow">Enfrentamos a dos de los gigantes del software de gestión en España. ¿Cuál se adapta mejor a tu modelo de negocio?</p>
+</div>
+</article>
+<!-- Article Card 5 -->
+<article class="bg-surface border border-light rounded-lg overflow-hidden hover:shadow-md transition-shadow cursor-pointer flex flex-col">
+<div class="h-[200px] w-full bg-surface-variant bg-cover bg-center" data-alt="A person reviewing a tax form on a tablet device in a bright, modern setting. The atmosphere is calm and focused, with a minimalist design approach. The colors are predominantly light grays and whites, reflecting a clear, cognitive-load-reducing environment suitable for financial tasks." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDQz_IJHKGrRFJ8Mih_Lc_AHfNnzduBoyDfdRAJhNEdMfTdc73QxhE7Co6bmwirbYrPHxSQTjsLKS5IlVRAWwrS_dFMTzl5etnfAcq4Vmi3QzI5WBQYKr9JrJMluQTlY0Z3l0MVZcNE2TUUEW5CDJG1IabYuCxWuRp1uJZix-yBZD9oA7F5QJdSO500kanv2mmAsfqAmNA-aOZ8rlt5YPC3IY3fVwbKRyULcn7jenQ8OOKy3NxfN-9AspUFTzmSiLPyPtVvi0TqyJY');"></div>
+<div class="p-6 flex-grow flex flex-col items-start">
+<span class="text-[1.2rem] font-bold text-cta-orange uppercase tracking-wider mb-2">Impuestos</span>
+<h3 class="font-headline-md text-[2.0rem] leading-tight text-primary mb-3">Cómo rellenar el Modelo 303</h3>
+<p class="font-body-md text-body-md text-text-muted flex-grow">Guía visual paso a paso para presentar tu declaración trimestral de IVA sin cometer errores ante Hacienda.</p>
+</div>
+</article>
+<!-- Article Card 6 -->
+<article class="bg-surface border border-light rounded-lg overflow-hidden hover:shadow-md transition-shadow cursor-pointer flex flex-col">
+<div class="h-[200px] w-full bg-surface-variant bg-cover bg-center" data-alt="A professional handshake between two individuals in business attire, symbolizing a successful partnership or deal. The lighting is corporate and sharp, with a focus on trust and authority. The scene uses a restrained palette of deep blues and neutral tones, fitting the institutional brand personality." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDH6inOjXMBEMcz2q1jqswPKHKDerjAOZqswqM7VlqZ_BMBOzENXVdXtwa9d67uPsZZ_iJuqJwBgTV_8F_E1dSrfO5M0tiN20H4TrKluIQ0ZJC6P7PqLcbMQPsoWpZlNbvhSAKFojA48TPBDQ0ym5wc5Iee2PZTZqKWI0auurYyHGDGwsUP41UUDvoyjPFkPgqN89KYuAXkvF1fz23bXMB_Bmmvn7RoKjRYzkpzQWB3fcBREXJlPLvZdBsYG8GoiLu9ucGR9SV0eHA');"></div>
+<div class="p-6 flex-grow flex flex-col items-start">
+<span class="text-[1.2rem] font-bold text-secondary uppercase tracking-wider mb-2">Estrategia</span>
+<h3 class="font-headline-md text-[2.0rem] leading-tight text-primary mb-3">Contratar a tu primer empleado</h3>
+<p class="font-body-md text-body-md text-text-muted flex-grow">Pasos legales y consideraciones financieras antes de dar el salto y ampliar el equipo de tu pequeño negocio.</p>
+</div>
+</article>
+</div>
+</section>
+<!-- AdSense Placeholder - Before Footer -->
+<div class="w-full max-w-content-max-width mx-auto px-margin-mobile md:px-margin-desktop py-gutter flex justify-center mt-auto">
+<div class="w-full md:w-[728px] h-[90px] bg-surface-variant border border-light flex items-center justify-center relative">
+<span class="absolute top-1 left-2 text-[1.0rem] text-text-muted">Publicidad</span>
+<span class="text-text-muted">AdSense Placeholder (728x90)</span>
+</div>
+</div>
+</main>
+<!-- Footer Component -->
+<footer class="bg-surface-container-low dark:bg-surface-container-low border-t border-light dark:border-outline-variant full-width">
+<div class="w-full py-12 px-margin-mobile md:px-margin-desktop max-w-content-max-width mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="flex flex-col items-center md:items-start gap-4">
+<span class="font-display-lg text-headline-md font-bold text-navy-deep">Gestión Autónomo</span>
+<span class="font-body-md text-body-md text-on-surface dark:text-on-surface">© 2024 Gestión Autónomo. Todos los derechos reservados.</span>
+</div>
+<ul class="flex flex-wrap justify-center md:justify-end gap-6">
+<li><a class="font-body-md text-body-md text-text-muted dark:text-on-surface-variant hover:text-primary underline transition-all focus:outline-none focus:ring-2 focus:ring-primary" href="#">Aviso Legal</a></li>
+<li><a class="font-body-md text-body-md text-text-muted dark:text-on-surface-variant hover:text-primary underline transition-all focus:outline-none focus:ring-2 focus:ring-primary" href="#">Política de Privacidad</a></li>
+<li><a class="font-body-md text-body-md text-text-muted dark:text-on-surface-variant hover:text-primary underline transition-all focus:outline-none focus:ring-2 focus:ring-primary" href="#">Cookies</a></li>
+<li><a class="font-body-md text-body-md text-text-muted dark:text-on-surface-variant hover:text-primary underline transition-all focus:outline-none focus:ring-2 focus:ring-primary" href="#">Contacto</a></li>
+</ul>
+</div>
+</footer>
+</body></html>

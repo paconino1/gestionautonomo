@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Informe SEO/AdSense — Nicho Rentable 2025</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #0f1f3d;
+    --navy-mid: #1b3266;
+    --gold: #c9a24a;
+    --gold-light: #e8c96a;
+    --cream: #f5f0e6;
+    --cream-dark: #e8e0d0;
+    --text: #1a1a2e;
+    --text-mid: #3d3d5c;
+    --text-muted: #7a7a9a;
+    --green-ok: #2d7a4a;
+    --green-bg: #e8f5ee;
+    --red-warn: #9a2d2d;
+    --red-bg: #fdf0f0;
+    --amber: #d4541a;
+    --border: #d4cfc2;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    background: var(--cream);
+    color: var(--text);
+    line-height: 1.75;
+    font-size: 15.5px;
+  }
+
+  /* ── COVER ── */
+  .cover {
+    background: var(--navy);
+    color: var(--cream);
+    padding: 80px 60px 70px;
+    position: relative;
+    overflow: hidden;
+  }
+  .cover::before {
+    content: '';
+    position: absolute;
+    top: -120px; right: -120px;
+    width: 500px; height: 500px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(201,162,74,0.18) 0%, transparent 70%);
+  }
+  .cover::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0;
+    width: 100%; height: 4px;
+    background: linear-gradient(90deg, var(--gold), var(--gold-light), var(--gold));
+  }
+  .cover-badge {
+    display: inline-block;
+    background: rgba(201,162,74,0.2);
+    border: 1px solid var(--gold);
+    color: var(--gold);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 5px 14px;
+    border-radius: 2px;
+    margin-bottom: 28px;
+  }
+  .cover h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 52px;
+    font-weight: 900;
+    line-height: 1.1;
+    max-width: 760px;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  .cover h1 span { color: var(--gold); }
+  .cover-sub {
+    font-size: 17px;
+    color: rgba(245,240,230,0.72);
+    max-width: 600px;
+    margin-bottom: 48px;
+    font-weight: 300;
+  }
+  .cover-meta {
+    display: flex; gap: 40px; flex-wrap: wrap;
+  }
+  .cover-meta-item { display: flex; flex-direction: column; gap: 4px; }
+  .cover-meta-item .label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--gold);
+  }
+  .cover-meta-item .value {
+    font-size: 15px;
+    color: rgba(245,240,230,0.9);
+    font-weight: 500;
+  }
+
+  /* ── LAYOUT ── */
+  .container { max-width: 920px; margin: 0 auto; padding: 0 40px; }
+
+  /* ── SECTION HEADERS ── */
+  .section {
+    padding: 64px 0 40px;
+    border-bottom: 1px solid var(--border);
+  }
+  .section:last-child { border-bottom: none; }
+
+  .section-number {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 8px;
+  }
+  .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--navy);
+    line-height: 1.2;
+    margin-bottom: 32px;
+    padding-bottom: 20px;
+    border-bottom: 3px solid var(--navy);
+  }
+  .section-title::after {
+    content: '';
+    display: block;
+    width: 48px; height: 3px;
+    background: var(--gold);
+    margin-top: 6px;
+  }
+
+  h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--navy-mid);
+    margin: 40px 0 14px;
+  }
+  h4 {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 28px 0 10px;
+  }
+  p { margin-bottom: 16px; color: var(--text-mid); }
+  ul, ol { padding-left: 22px; margin-bottom: 16px; }
+  li { margin-bottom: 8px; color: var(--text-mid); }
+  strong { color: var(--text); font-weight: 600; }
+
+  /* ── STATS GRID ── */
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px;
+    margin: 28px 0;
+  }
+  .stat-card {
+    background: var(--navy);
+    color: var(--cream);
+    padding: 24px 22px;
+    border-radius: 4px;
+    border-left: 4px solid var(--gold);
+  }
+  .stat-card .stat-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 10px;
+  }
+  .stat-card .stat-value {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1;
+  }
+  .stat-card .stat-note {
+    font-size: 12px;
+    color: rgba(245,240,230,0.6);
+    margin-top: 6px;
+  }
+
+  /* ── CALLOUT BOXES ── */
+  .callout {
+    padding: 22px 26px;
+    border-radius: 4px;
+    margin: 24px 0;
+    border-left: 4px solid;
+  }
+  .callout-info { background: #eef3fb; border-color: var(--navy-mid); }
+  .callout-success { background: var(--green-bg); border-color: var(--green-ok); }
+  .callout-warning { background: #fff8ee; border-color: var(--amber); }
+  .callout-danger { background: var(--red-bg); border-color: var(--red-warn); }
+  .callout-title {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+  .callout-info .callout-title { color: var(--navy-mid); }
+  .callout-success .callout-title { color: var(--green-ok); }
+  .callout-warning .callout-title { color: var(--amber); }
+  .callout-danger .callout-title { color: var(--red-warn); }
+  .callout p { margin: 0; font-size: 14.5px; }
+
+  /* ── TABLES ── */
+  .table-wrap { overflow-x: auto; margin: 24px 0; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+  }
+  thead tr {
+    background: var(--navy);
+    color: #fff;
+  }
+  thead th {
+    padding: 13px 16px;
+    text-align: left;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  tbody tr { border-bottom: 1px solid var(--border); }
+  tbody tr:nth-child(even) { background: rgba(245,240,230,0.6); }
+  tbody tr:hover { background: rgba(201,162,74,0.08); }
+  tbody td { padding: 12px 16px; color: var(--text-mid); vertical-align: top; }
+  tbody td:first-child { color: var(--text); font-weight: 500; }
+  .tag {
+    display: inline-block;
+    font-size: 11px;
+    padding: 2px 8px;
+    border-radius: 2px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 500;
+  }
+  .tag-green { background: var(--green-bg); color: var(--green-ok); }
+  .tag-red { background: var(--red-bg); color: var(--red-warn); }
+  .tag-amber { background: #fff8ee; color: var(--amber); }
+  .tag-blue { background: #eef3fb; color: var(--navy-mid); }
+
+  /* ── HIGHLIGHT BLOCK ── */
+  .highlight-block {
+    background: var(--navy);
+    color: var(--cream);
+    padding: 36px 40px;
+    border-radius: 4px;
+    margin: 32px 0;
+    position: relative;
+    overflow: hidden;
+  }
+  .highlight-block::before {
+    content: '';
+    position: absolute; top: 0; left: 0;
+    width: 100%; height: 3px;
+    background: linear-gradient(90deg, var(--gold), transparent);
+  }
+  .highlight-block h3 { color: var(--gold); margin-top: 0; }
+  .highlight-block p, .highlight-block li { color: rgba(245,240,230,0.85); }
+
+  /* ── ARTICLE LIST ── */
+  .article-list { counter-reset: articles; }
+  .article-item {
+    display: flex;
+    align-items: baseline;
+    gap: 14px;
+    padding: 14px 18px;
+    border-bottom: 1px solid var(--border);
+    transition: background 0.15s;
+  }
+  .article-item:hover { background: rgba(201,162,74,0.07); }
+  .article-num {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px;
+    color: var(--gold);
+    min-width: 28px;
+    font-weight: 500;
+  }
+  .article-title { font-weight: 500; color: var(--text); flex: 1; }
+  .article-meta {
+    display: flex; gap: 10px; flex-wrap: wrap; align-items: center;
+    font-size: 12.5px;
+  }
+
+  /* ── DOMAIN LIST ── */
+  .domain-list { display: flex; flex-direction: column; gap: 12px; margin: 20px 0; }
+  .domain-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 20px;
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    border-left: 4px solid var(--navy-mid);
+  }
+  .domain-name {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--navy);
+    flex: 1;
+  }
+  .domain-note { font-size: 13px; color: var(--text-muted); }
+
+  /* ── INCOME TABLE ── */
+  .income-row td:last-child { color: var(--green-ok); font-weight: 600; font-family: 'IBM Plex Mono', monospace; }
+
+  /* ── SITE STRUCTURE ── */
+  .site-tree { background: var(--navy); color: var(--cream); padding: 28px 32px; border-radius: 4px; font-family: 'IBM Plex Mono', monospace; font-size: 13.5px; line-height: 2; }
+  .site-tree .root { color: var(--gold); font-weight: 500; }
+  .site-tree .cat { color: var(--gold-light); }
+  .site-tree .page { color: rgba(245,240,230,0.8); }
+  .site-tree .indent1 { margin-left: 24px; }
+  .site-tree .indent2 { margin-left: 48px; }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--navy);
+    color: rgba(245,240,230,0.5);
+    text-align: center;
+    padding: 36px 40px;
+    font-size: 12.5px;
+    font-family: 'IBM Plex Mono', monospace;
+    letter-spacing: 0.5px;
+  }
+  footer strong { color: var(--gold); }
+
+  /* ── DIVIDER ── */
+  .divider { height: 1px; background: var(--border); margin: 40px 0; }
+
+  @media (max-width: 680px) {
+    .cover { padding: 48px 28px 52px; }
+    .cover h1 { font-size: 34px; }
+    .container { padding: 0 22px; }
+    .section-title { font-size: 26px; }
+    .stats-grid { grid-template-columns: 1fr 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ══════════ COVER ══════════ -->
+<div class="cover">
+  <div class="container">
+    <div class="cover-badge">Informe de Consultoría SEO · AdSense · 2025</div>
+    <h1>Software de Facturación<br>para <span>Autónomos y PYMES</span></h1>
+    <p class="cover-sub">Plan completo para crear una web de nicho rentable con AdSense, afiliación y leads orgánicos. Desde la selección del dominio hasta la estimación de ingresos real.</p>
+    <div class="cover-meta">
+      <div class="cover-meta-item"><span class="label">Modelo</span><span class="value">AdSense + Afiliación</span></div>
+      <div class="cover-meta-item"><span class="label">Mercado</span><span class="value">España / LATAM</span></div>
+      <div class="cover-meta-item"><span class="label">CPC estimado</span><span class="value">€1,80 – €4,50</span></div>
+      <div class="cover-meta-item"><span class="label">RPM estimado</span><span class="value">€10 – €28</span></div>
+      <div class="cover-meta-item"><span class="label">Dificultad SEO</span><span class="value">Media</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════ SECCIÓN 1 ══════════ -->
+<div class="container">
+<div class="section">
+  <p class="section-number">Sección 01</p>
+  <h2 class="section-title">Selección del Nicho</h2>
+
+  <h3>El nicho elegido: Software de Facturación y Gestión para Autónomos y PYMES en España</h3>
+
+  <p>De entre los nichos de mayor potencial para webs monetizadas con AdSense y afiliación en el mercado hispanohablante, el <strong>software de gestión y facturación para autónomos y pequeñas empresas</strong> representa una de las oportunidades más sólidas del momento. No se trata de un nicho genérico de «tecnología» ni de «emprendimiento»: es un segmento muy concreto, con audiencia de alto poder adquisitivo, intención comercial elevada y un ecosistema de anunciantes que compiten activamente por cada clic.</p>
+
+  <p>En España, hay más de 3,3 millones de trabajadores autónomos. La normativa de <strong>factura electrónica obligatoria</strong> (Ley Crea y Crece, prevista para entrar en vigor de forma escalonada desde 2025-2026) está forzando a miles de autónomos y microempresas a buscar soluciones digitales que antes ignoraban. Esto genera una demanda de búsqueda orgánica explosiva y sostenida en el tiempo. Además, el mercado SaaS de software de gestión para PYMES en España creció un 18% interanual en 2023, y la tendencia se mantiene al alza.</p>
+
+  <div class="callout callout-success">
+    <p class="callout-title">✓ Catalizador de mercado clave</p>
+    <p>La <strong>obligatoriedad de la factura electrónica</strong> en España es un evento regulatorio que dispara las búsquedas de forma sostenida. Términos como "programa factura electrónica autónomo" o "software facturación PYME gratuito" están experimentando crecimientos del 40-80% en volumen de búsqueda. Nichos impulsados por regulación son extraordinariamente estables y predecibles.</p>
+  </div>
+
+  <h3>Por qué es rentable con AdSense</h3>
+
+  <p>La rentabilidad de AdSense depende fundamentalmente del <strong>valor del cliente</strong> para el anunciante. En este nicho, los anunciantes son empresas SaaS (Holded, Quipu, Anfix, Sage, ContaSimple, Billin, Factusol, Factorial…) cuyo cliente tiene un LTV (valor de vida del cliente) de entre 300 y 1.500 euros anuales por suscripción. Esto hace que estén dispuestos a pagar entre 2 y 6 euros por clic publicitario, inflando el CPC del nicho muy por encima de la media.</p>
+
+  <p>Adicionalmente, la audiencia que llega a estas páginas (autónomos en activo, gestores administrativos, dueños de pequeños negocios) tiene <strong>capacidad de compra inmediata</strong>. No son estudiantes informándose, son profesionales que necesitan resolver un problema operativo hoy. Esto incrementa tanto el CTR en los anuncios como la tasa de conversión de afiliados.</p>
+
+  <div class="stats-grid">
+    <div class="stat-card">
+      <div class="stat-label">CPC medio</div>
+      <div class="stat-value">€2,80</div>
+      <div class="stat-note">Rango €1,80–€4,50</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">RPM estimado</div>
+      <div class="stat-value">€16</div>
+      <div class="stat-note">Rango €10–€28</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">CTR típico</div>
+      <div class="stat-value">3,2%</div>
+      <div class="stat-note">Nicho B2B de alta intención</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">Autónomos en España</div>
+      <div class="stat-value">3,3M</div>
+      <div class="stat-note">Audiencia objetivo directa</div>
+    </div>
+  </div>
+
+  <div class="callout callout-info">
+    <p class="callout-title">ℹ️ Metodología de estimación</p>
+    <p>Las cifras de CPC y RPM son estimaciones basadas en datos de herramientas como Google Keyword Planner, SEMrush y la experiencia publicada en foros especializados de AdSense. Los valores reales pueden variar según la calidad del tráfico, la geolocalización y la temporada. Los meses de enero, septiembre y octubre son los más rentables en este nicho (inicio de ejercicio fiscal y cierre de año).</p>
+  </div>
+
+  <h3>Por qué estas categorías son las correctas</h3>
+
+  <p>El nicho se estructura en <strong>cinco grandes categorías de contenido</strong>, cada una con su propio perfil de intención de búsqueda y rentabilidad. Las categorías fueron elegidas siguiendo tres criterios: (1) volumen de búsqueda orgánica suficiente, (2) CPC mínimo de €1,50 en los anunciantes que aparecen en esas queries, y (3) existencia de programas de afiliación o posibilidad de monetización adicional más allá de AdSense.</p>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Categoría</th>
+          <th>Intención</th>
+          <th>CPC Ref.</th>
+          <th>Monetización principal</th>
+          <th>Competencia</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Comparativas de software</td>
+          <td><span class="tag tag-amber">Comercial</span></td>
+          <td>€3,20–€4,50</td>
+          <td>Afiliados + AdSense</td>
+          <td><span class="tag tag-amber">Media</span></td>
+        </tr>
+        <tr>
+          <td>Guías de facturación</td>
+          <td><span class="tag tag-blue">Informacional</span></td>
+          <td>€2,00–€3,20</td>
+          <td>AdSense + Leads</td>
+          <td><span class="tag tag-green">Baja-Media</span></td>
+        </tr>
+        <tr>
+          <td>Normativa fiscal para autónomos</td>
+          <td><span class="tag tag-blue">Informacional</span></td>
+          <td>€2,50–€4,00</td>
+          <td>AdSense + Afiliados asesoría</td>
+          <td><span class="tag tag-green">Baja</span></td>
+        </tr>
+        <tr>
+          <td>Reviews de herramientas SaaS</td>
+          <td><span class="tag tag-amber">Comercial / Trans.</span></td>
+          <td>€3,00–€4,50</td>
+          <td>Afiliados principalmente</td>
+          <td><span class="tag tag-amber">Media</span></td>
+        </tr>
+        <tr>
+          <td>Gestión empresarial PYMES</td>
+          <td><span class="tag tag-blue">Informacional</span></td>
+          <td>€1,80–€2,80</td>
+          <td>AdSense + Leads</td>
+          <td><span class="tag tag-green">Baja</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- ══════════ SECCIÓN 2 ══════════ -->
+<div class="section">
+  <p class="section-number">Sección 02</p>
+  <h2 class="section-title">Estrategia SEO</h2>
+
+  <h3>Tipología de keywords a atacar</h3>
+
+  <p>La estrategia SEO se basa en un modelo de tres capas que permite generar tráfico rápidamente con artículos de baja competencia, mientras se construye autoridad para atacar términos más competidos.</p>
+
+  <h4>Capa 1 — Long Tail de baja competencia (prioridad alta)</h4>
+  <p>Son el <strong>motor del crecimiento inicial</strong>. Términos de 4-7 palabras con volúmenes de 50-800 búsquedas mensuales, KD (Keyword Difficulty) inferior a 25 en Ahrefs/SEMrush, y alta intención de compra o resolución de problema. Estos artículos empezarán a posicionarse entre las semanas 6 y 20 de publicación si están bien optimizados.</p>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Keyword</th><th>Volumen/mes (ES)</th><th>KD aprox.</th><th>Intención</th><th>CPC ref.</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>mejor programa facturación autónomos gratis</td><td>320</td><td>18</td><td><span class="tag tag-amber">Comercial</span></td><td>€3,10</td></tr>
+        <tr><td>software facturación autónomo sin cuota mensual</td><td>180</td><td>12</td><td><span class="tag tag-amber">Comercial</span></td><td>€2,80</td></tr>
+        <tr><td>cómo hacer factura electrónica autónomo</td><td>720</td><td>22</td><td><span class="tag tag-blue">Informacional</span></td><td>€2,40</td></tr>
+        <tr><td>diferencia entre factura simplificada y ordinaria</td><td>410</td><td>15</td><td><span class="tag tag-blue">Informacional</span></td><td>€2,10</td></tr>
+        <tr><td>holded vs quipu cuál es mejor</td><td>260</td><td>20</td><td><span class="tag tag-amber">Comercial</span></td><td>€3,80</td></tr>
+        <tr><td>programa contabilidad pyme pequeña empresa fácil</td><td>480</td><td>24</td><td><span class="tag tag-amber">Comercial</span></td><td>€3,50</td></tr>
+        <tr><td>qué modelo de IVA tiene que presentar un autónomo</td><td>590</td><td>16</td><td><span class="tag tag-blue">Informacional</span></td><td>€2,90</td></tr>
+        <tr><td>alternativas a Sage para autónomos baratas</td><td>210</td><td>14</td><td><span class="tag tag-amber">Comercial</span></td><td>€3,20</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h4>Capa 2 — Head terms de competencia media (objetivo mes 6-12)</h4>
+  <p>Términos de 2-4 palabras con volúmenes de 1.000-8.000 búsquedas mensuales y KD de 30-50. Requieren artículos de 2.500+ palabras, estructura de contenido muy completa, y cierta autoridad de dominio (DA 15+). Algunos ejemplos clave:</p>
+  <ul>
+    <li><strong>«software facturación autónomos»</strong> — 4.400 búsquedas/mes, KD 38, CPC €3,60</li>
+    <li><strong>«programa facturación gratis»</strong> — 6.600 búsquedas/mes, KD 42, CPC €2,90</li>
+    <li><strong>«factura electrónica obligatoria»</strong> — 8.100 búsquedas/mes, KD 35, CPC €3,10</li>
+    <li><strong>«Holded precio»</strong> — 2.900 búsquedas/mes, KD 28, CPC €4,10</li>
+  </ul>
+
+  <h4>Capa 3 — Contenido informacional de volumen (tráfico pasivo)</h4>
+  <p>Son artículos sobre dudas fiscales y operativas del día a día del autónomo. No tienen CPC altísimo, pero atraen tráfico masivo y consistente, perfecto para AdSense. Ejemplos: «cuándo se paga el IVA trimestral», «modelos AEAT para autónomos», «cómo darse de alta en la Seguridad Social como autónomo».</p>
+
+  <h3>Intención de búsqueda por categoría</h3>
+
+  <div class="callout callout-info">
+    <p class="callout-title">📌 Framework de intención aplicado</p>
+    <p>Para este nicho aplicamos el modelo MOFU-BOFU-TOFU invertido: arrancamos con BOFU (Bottom of Funnel, máxima intención de compra) para generar ingresos rápido, luego escalamos con TOFU (Top of Funnel, informacional) para construir autoridad y volumen.</p>
+  </div>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Intención</th><th>Tipo de contenido</th><th>Objetivo</th><th>Acción del usuario</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Transaccional</strong></td>
+          <td>Comparativas "mejor X para Y"</td>
+          <td>Clic en afiliado / lead</td>
+          <td>Quiere comprar, necesita confirmación</td>
+        </tr>
+        <tr>
+          <td><strong>Comercial</strong></td>
+          <td>Reviews individuales, vs. artículos</td>
+          <td>Clic en afiliado + AdSense</td>
+          <td>Está evaluando opciones</td>
+        </tr>
+        <tr>
+          <td><strong>Informacional alta</strong></td>
+          <td>Guías paso a paso, tutoriales</td>
+          <td>AdSense + email list</td>
+          <td>Quiere aprender a hacer algo</td>
+        </tr>
+        <tr>
+          <td><strong>Informacional baja</strong></td>
+          <td>Definiciones, normativa, dudas</td>
+          <td>AdSense + autoridad</td>
+          <td>Resuelve una duda puntual</td>
+        </tr>
+        <tr>
+          <td><strong>Navegacional</strong></td>
+          <td>Reviews de marcas específicas</td>
+          <td>Afiliados</td>
+          <td>Busca info de un producto concreto</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>Estrategia de crecimiento y publicación</h3>
+
+  <p>El modelo de crecimiento recomendado es el <strong>«Topical Authority Cluster»</strong>: en lugar de publicar artículos sueltos, se construye un clúster temático completo para cada categoría. Esto aumenta la autoridad topical del dominio ante Google, mejora el interlinking interno y permite posicionar más rápido.</p>
+
+  <div class="highlight-block">
+    <h3>Plan de publicación recomendado</h3>
+    <ul>
+      <li><strong>Meses 1-2:</strong> 16 artículos long tail de baja competencia (2 por semana). Foco en categorías «Comparativas» y «Normativa fiscal». Mínimo 1.500 palabras cada uno.</li>
+      <li><strong>Meses 3-4:</strong> 16 artículos adicionales. Ampliar clústeres. Publicar 4 artículos «pillar» de 3.000+ palabras para las categorías principales.</li>
+      <li><strong>Meses 5-6:</strong> 18 artículos. Comenzar a atacar head terms de Capa 2. Actualizar los primeros artículos publicados con datos frescos.</li>
+      <li><strong>Mes 6+:</strong> Publicar 6-8 artículos mensuales. Foco en ampliar categorías con mejor rendimiento. Añadir sección de noticias del sector (normativa AEAT, novedades fiscales).</li>
+    </ul>
+  </div>
+
+  <p>La <strong>actualización de contenido</strong> es una palanca crítica: artículos sobre normativa fiscal o software SaaS (con precios que cambian) deben revisarse cada 6 meses. Google premia el «freshness» y en este nicho las actualizaciones de producto son frecuentes.</p>
+</div>
+
+<!-- ══════════ SECCIÓN 3 ══════════ -->
+<div class="section">
+  <p class="section-number">Sección 03</p>
+  <h2 class="section-title">Monetización</h2>
+
+  <h3>Monetización con Google AdSense</h3>
+
+  <p>AdSense funciona de forma excelente en este nicho por la alta densidad de anunciantes SaaS que pujan en Display y Search. El CPC fluctúa, pero los meses de mayor actividad fiscal (enero, abril, julio y octubre) presentan CPCs hasta un 40% superiores a la media anual, lo que crea picos de ingresos predecibles.</p>
+
+  <h4>Posicionamiento de anuncios recomendado</h4>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Posición</th><th>Formato recomendado</th><th>Rendimiento</th><th>Notas</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Sticky sidebar derecha</td>
+          <td>300×600 o 160×600</td>
+          <td><span class="tag tag-green">Alto</span></td>
+          <td>Visible durante todo el scroll. Especialmente en artículos largos.</td>
+        </tr>
+        <tr>
+          <td>Dentro del contenido (párrafo 3-4)</td>
+          <td>Responsive in-article</td>
+          <td><span class="tag tag-green">Muy alto</span></td>
+          <td>El anuncio contextual más efectivo. Máximo 2 en el cuerpo.</td>
+        </tr>
+        <tr>
+          <td>Justo antes del H2 principal</td>
+          <td>728×90 o Responsive</td>
+          <td><span class="tag tag-amber">Medio-Alto</span></td>
+          <td>Ideal en comparativas donde el usuario sigue leyendo.</td>
+        </tr>
+        <tr>
+          <td>Fin del artículo (antes de comentarios)</td>
+          <td>300×250 o Responsive</td>
+          <td><span class="tag tag-amber">Medio</span></td>
+          <td>Captura usuarios que leyeron todo el contenido (alta calidad).</td>
+        </tr>
+        <tr>
+          <td>Header (bajo el menú)</td>
+          <td>Leaderboard 728×90</td>
+          <td><span class="tag tag-red">Bajo-Medio</span></td>
+          <td>Evitar en móvil. Puede aumentar bounce rate si es intrusivo.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="callout callout-warning">
+    <p class="callout-title">⚠️ Importante: UX vs CPM</p>
+    <p>No saturar la página con más de 3-4 anuncios visibles simultáneamente. Google penaliza las páginas con exceso de anuncios. El equilibrio óptimo para este nicho es <strong>2 anuncios en el cuerpo + 1 sidebar sticky</strong>. La calidad del tráfico cae si el usuario abandona rápido por saturación publicitaria.</p>
+  </div>
+
+  <h3>Otros métodos de monetización</h3>
+
+  <h4>1. Afiliación directa con software SaaS (motor principal de ingresos)</h4>
+  <p>Este es el método de mayor potencial. Los programas de afiliación de software de gestión pagan comisiones recurrentes o fijas por registro/suscripción. Ejemplos reales:</p>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Programa</th><th>Comisión</th><th>Cookie</th><th>Modelo</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Holded</td><td>20% recurrente (primeros 12m)</td><td>30 días</td><td>SaaS recurrente</td></tr>
+        <tr><td>Quipu</td><td>€30–€60 por registro validado</td><td>60 días</td><td>CPA fijo</td></tr>
+        <tr><td>Factorial HR</td><td>20% primer año</td><td>30 días</td><td>SaaS recurrente</td></tr>
+        <tr><td>Monday.com</td><td>$100–200 por cliente</td><td>90 días</td><td>CPA fijo</td></tr>
+        <tr><td>HubSpot</td><td>30% recurrente (hasta 1 año)</td><td>90 días</td><td>SaaS recurrente</td></tr>
+        <tr><td>Contasimple</td><td>€25 por suscripción de pago</td><td>30 días</td><td>CPA fijo</td></tr>
+        <tr><td>Billin</td><td>€15-€40 por alta</td><td>45 días</td><td>CPA fijo</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h4>2. Generación de leads para asesorías y gestorías</h4>
+  <p>Una de las fuentes de ingresos más subestimadas del nicho. El autónomo que busca «cómo hacer una declaración de la renta autónomo» también es un potencial cliente de una gestoría. Se puede monetizar mediante <strong>redes de leads como Bark.com, Domestika leads, o contacto directo con gestorías locales</strong> que pagan entre €8 y €25 por lead cualificado. Con 1.000 visitas mensuales en contenido de normativa fiscal, se pueden generar 20-40 leads/mes.</p>
+
+  <h4>3. Newsletter y email marketing</h4>
+  <p>Capturar el email del visitante mediante un lead magnet (ejemplo: «Guía PDF: Los 5 mejores programas de facturación gratuitos en 2025») permite construir una lista de suscriptores. Con 5.000 suscriptores activos se puede generar €500-€2.000/mes adicionales mediante campañas de afiliación directas o patrocinios de software.</p>
+
+  <h4>4. Patrocinios directos (escala)</h4>
+  <p>Una vez el dominio alcanza 10.000+ visitas mensuales, es posible negociar <strong>patrocinios directos con empresas SaaS</strong> (Holded, Anfix, Sage...) que pagan €200-€800/mes por un banner exclusivo o una mención en la newsletter. Las marcas SaaS prefieren webs de nicho especializado sobre medios generalistas porque tienen más tasa de conversión.</p>
+
+  <h3>Estimación realista de ingresos según tráfico</h3>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Visitas/mes</th><th>AdSense (RPM €16)</th><th>Afiliados (1,5% conv.)</th><th>Leads</th><th class="income-row">Total estimado</th></tr>
+      </thead>
+      <tbody class="income-row">
+        <tr><td>1.000</td><td>€16</td><td>€45</td><td>€20</td><td>€81</td></tr>
+        <tr><td>5.000</td><td>€80</td><td>€225</td><td>€100</td><td>€405</td></tr>
+        <tr><td>10.000</td><td>€160</td><td>€450</td><td>€200</td><td>€810</td></tr>
+        <tr><td>25.000</td><td>€400</td><td>€1.125</td><td>€400</td><td>€1.925</td></tr>
+        <tr><td>50.000</td><td>€800</td><td>€2.250</td><td>€700</td><td>€3.750</td></tr>
+        <tr><td>100.000</td><td>€1.600</td><td>€4.500</td><td>€1.200</td><td>€7.300</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="callout callout-success">
+    <p class="callout-title">✓ La afiliación es el verdadero motor</p>
+    <p>Como se aprecia, AdSense representa entre el 18% y el 22% de los ingresos totales estimados. El grueso de la monetización proviene de <strong>afiliados + leads</strong>. Esto es deliberado: en nichos B2B de alta intención, la afiliación supera a AdSense entre 3 y 6 veces. Tratar AdSense como complemento, no como fuente principal, es la estrategia correcta.</p>
+  </div>
+</div>
+
+<!-- ══════════ SECCIÓN 4 ══════════ -->
+<div class="section">
+  <p class="section-number">Sección 04</p>
+  <h2 class="section-title">Justificación del Nicho</h2>
+
+  <h3>Coste de producción de contenido</h3>
+
+  <p>Para que los artículos posicionen en Google, necesitan cumplir ciertos estándares de calidad, expertise y longitud. En este nicho, los artículos deben demostrar conocimiento real de fiscalidad española y software empresarial, lo que eleva ligeramente el coste de redacción respecto a otros nichos más superficiales.</p>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Perfil de redactor</th><th>€/palabra</th><th>Artículo 1.500 pal.</th><th>Artículo 2.500 pal.</th><th>Calidad</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Freelance básico (Workana/Fiverr)</td>
+          <td>€0,018–€0,030</td>
+          <td>€27–€45</td>
+          <td>€45–€75</td>
+          <td><span class="tag tag-red">Baja</span></td>
+        </tr>
+        <tr>
+          <td>Freelance intermedio (Textbroker ES)</td>
+          <td>€0,035–€0,055</td>
+          <td>€52–€82</td>
+          <td>€87–€137</td>
+          <td><span class="tag tag-amber">Media</span></td>
+        </tr>
+        <tr>
+          <td>Redactor especializado (fiscal/tech)</td>
+          <td>€0,060–€0,090</td>
+          <td>€90–€135</td>
+          <td>€150–€225</td>
+          <td><span class="tag tag-green">Alta</span></td>
+        </tr>
+        <tr>
+          <td>IA (GPT-4o) + revisión humana</td>
+          <td>€0,008–€0,015</td>
+          <td>€12–€22</td>
+          <td>€20–€37</td>
+          <td><span class="tag tag-amber">Media (con revisión)</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="callout callout-warning">
+    <p class="callout-title">⚠️ Recomendación sobre IA + revisión</p>
+    <p>El uso de IA para redacción es viable con revisión humana de calidad, especialmente para artículos informativos. Para artículos de comparativa de software o normativa fiscal, se recomienda al menos un revisor con conocimientos del sector. Google es cada vez más capaz de detectar contenido genérico de baja calidad, y en nichos YMYL (que afectan al dinero del usuario) aplica estándares de E-E-A-T más exigentes.</p>
+  </div>
+
+  <h3>Presupuesto para 50 artículos</h3>
+
+  <div class="stats-grid">
+    <div class="stat-card">
+      <div class="stat-label">50 art. redactor intermedio</div>
+      <div class="stat-value">€3.500</div>
+      <div class="stat-note">Media 1.800 pal./artículo · €0,04/pal.</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">50 art. IA + revisión</div>
+      <div class="stat-value">€1.100</div>
+      <div class="stat-note">Opción de bajo presupuesto</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">Hosting + dominio (año 1)</div>
+      <div class="stat-value">€180</div>
+      <div class="stat-note">SiteGround/Hostinger + .es</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">Herramientas SEO</div>
+      <div class="stat-value">€420</div>
+      <div class="stat-note">SEMrush/Ahrefs básico × 12m</div>
+    </div>
+  </div>
+
+  <div class="highlight-block">
+    <h3>Presupuesto total estimado para arrancar</h3>
+    <ul>
+      <li><strong>Opción lean (IA + revisión):</strong> €1.700 — viable con dedicación personal, ideal si el propietario tiene conocimiento del sector</li>
+      <li><strong>Opción estándar (redactor intermedio):</strong> €4.100 — equilibrio calidad/coste, permite escalar sin depender del propietario para escribir</li>
+      <li><strong>Opción premium (redactor especializado):</strong> €7.500 — máxima calidad, posicionamiento más rápido, menor riesgo de penalización</li>
+    </ul>
+  </div>
+
+  <h3>Tiempo estimado para generar ingresos</h3>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Hito</th><th>Tiempo estimado</th><th>Condiciones</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Primeros artículos indexados</td><td>Semana 2-3</td><td>GSC activo, sitemap enviado</td></tr>
+        <tr><td>Primeras posiciones top 20</td><td>Mes 2-3</td><td>Long tail muy bajo KD (&lt;15)</td></tr>
+        <tr><td>Primera aprobación AdSense</td><td>Mes 2-4</td><td>Mínimo 20-30 artículos, política clara</td></tr>
+        <tr><td>Primeros €50-100/mes</td><td>Mes 4-6</td><td>500-1.000 visitas orgánicas/mes</td></tr>
+        <tr><td>€300-500/mes</td><td>Mes 8-12</td><td>5.000-8.000 visitas/mes</td></tr>
+        <tr><td>€1.000+/mes</td><td>Mes 14-20</td><td>20.000+ visitas/mes, afiliados activos</td></tr>
+        <tr><td>€3.000+/mes</td><td>Mes 24-36</td><td>50.000+ visitas/mes, newsletter activa</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>Escalabilidad del proyecto</h3>
+
+  <p>Una de las ventajas clave de este nicho es su <strong>escalabilidad horizontal</strong>. Una vez consolidada la autoridad en «software de facturación para autónomos en España», el dominio puede expandirse hacia:</p>
+  <ul>
+    <li><strong>LATAM:</strong> México, Argentina y Colombia tienen millones de autónomos y pymes con las mismas necesidades y mucha menos competencia editorial. El mismo contenido, adaptado, puede duplicar el tráfico.</li>
+    <li><strong>Nichos adyacentes:</strong> software de RRHH para pymes, software de TPV para comercios, herramientas de marketing para autónomos. Todos comparten audiencia y anunciantes.</li>
+    <li><strong>Venta del activo:</strong> Una web de nicho con €1.500/mes estabilizados puede venderse en plataformas como Flippa o Empire Flippers por 30-40× ingresos mensuales, es decir, entre €45.000 y €60.000.</li>
+  </ul>
+</div>
+
+<!-- ══════════ SECCIÓN 5 ══════════ -->
+<div class="section">
+  <p class="section-number">Sección 05</p>
+  <h2 class="section-title">Ejemplo Práctico</h2>
+
+  <h3>5 dominios recomendados (disponibilidad aproximada a verificar)</h3>
+
+  <div class="domain-list">
+    <div class="domain-card">
+      <div class="domain-name">facturafacil.es</div>
+      <div class="domain-note">Directo al grano. Fácil de recordar. Marca ideal para el segmento «sin complicaciones». Excelente para posicionar comparativas de herramientas fáciles de usar.</div>
+    </div>
+    <div class="domain-card">
+      <div class="domain-name">softwaredegestion.es</div>
+      <div class="domain-note">Keyword exacta en el dominio. Ventaja SEO marginal pero real. Perfil de autoridad temática muy amplio desde el primer día.</div>
+    </div>
+    <div class="domain-card">
+      <div class="domain-name">gestionautonomo.es</div>
+      <div class="domain-note">Muy orientado al autónomo. Conecta emocionalmente con el público objetivo. Permite cubrir todo el universo de contenidos para autónomos.</div>
+    </div>
+    <div class="domain-card">
+      <div class="domain-name">comparasoftware.net</div>
+      <div class="domain-note">Marca de comparativas pura. Excelente si se quiere orientar la web principalmente a artículos de comparación con alto valor de afiliación. Escalable a muchos tipos de software.</div>
+    </div>
+    <div class="domain-card">
+      <div class="domain-name">pymedigital.es</div>
+      <div class="domain-note">Nombre de marca limpio, no sobre-optimizado. Da amplitud para crecer hacia el segmento PYME. Transmite profesionalidad y transformación digital.</div>
+    </div>
+  </div>
+
+  <div class="callout callout-info">
+    <p class="callout-title">💡 Consejo sobre el dominio</p>
+    <p>Se recomienda <strong>dominio .es</strong> si el objetivo es España (mejor geolocalización en Google.es) o <strong>.com</strong> si se quiere atacar LATAM simultáneamente. Evitar dominios con guiones. Verificar siempre con herramientas como Namecheap o Dondominio antes de confirmar disponibilidad.</p>
+  </div>
+
+  <h3>Estructura recomendada de la web</h3>
+
+  <div class="site-tree">
+    <div class="root">📂 Home — «El portal de referencia para el software de autónomos y pymes»</div>
+    <div class="indent1 cat">├── 📁 /comparativas/ — «Los mejores programas de facturación [año]»</div>
+    <div class="indent2 page">│   ├── /comparativas/mejor-software-facturacion-autonomos/</div>
+    <div class="indent2 page">│   ├── /comparativas/holded-vs-quipu/</div>
+    <div class="indent2 page">│   └── /comparativas/mejores-crm-pymes/</div>
+    <div class="indent1 cat">├── 📁 /guias/ — «Aprende a facturar y gestionar tu negocio»</div>
+    <div class="indent2 page">│   ├── /guias/como-hacer-factura-electronica/</div>
+    <div class="indent2 page">│   ├── /guias/tipos-de-facturas-en-espana/</div>
+    <div class="indent2 page">│   └── /guias/facturacion-sin-ser-autonomo/</div>
+    <div class="indent1 cat">├── 📁 /normativa/ — «Fiscalidad y regulación para autónomos»</div>
+    <div class="indent2 page">│   ├── /normativa/factura-electronica-obligatoria-espana/</div>
+    <div class="indent2 page">│   ├── /normativa/iva-trimestral-autonomos/</div>
+    <div class="indent2 page">│   └── /normativa/modelos-aeat-autonomos/</div>
+    <div class="indent1 cat">├── 📁 /reviews/ — «Análisis en profundidad de cada herramienta»</div>
+    <div class="indent2 page">│   ├── /reviews/holded-opinion/</div>
+    <div class="indent2 page">│   ├── /reviews/quipu-review/</div>
+    <div class="indent2 page">│   └── /reviews/anfix-analisis/</div>
+    <div class="indent1 cat">└── 📁 /gestion-pymes/ — «Gestiona tu empresa de forma eficiente»</div>
+    <div class="indent2 page">    ├── /gestion-pymes/software-recursos-humanos-pymes/</div>
+    <div class="indent2 page">    └── /gestion-pymes/herramientas-crm-autonomos/</div>
+  </div>
+
+  <h3>Plan de 20 artículos para la categoría «Comparativas»</h3>
+
+  <p>Esta categoría es la de mayor retorno económico por artículo. Los artículos de comparativa atraen tráfico con intención de compra muy elevada y tienen las mejores tasas de conversión en programas de afiliación. El objetivo es construir el clúster completo de comparativas durante los primeros 4 meses.</p>
+
+  <div class="article-list">
+    <div class="article-item">
+      <span class="article-num">01</span>
+      <span class="article-title">Los 7 mejores programas de facturación para autónomos en 2025</span>
+      <div class="article-meta"><span class="tag tag-green">Pilar</span><span class="tag tag-amber">3.500 pal.</span><span class="tag tag-blue">Alta conv.</span></div>
+    </div>
+    <div class="article-item">
+      <span class="article-num">02</span>
+      <span class="article-title">Holded vs Quipu: ¿Cuál es mejor para autónomos? Comparativa 2025</span>
+      <div class="article-meta"><span class="tag tag-green">Vs.</span><span class="tag tag-amber">2.200 pal.</span></div>
+    </div>
+    <div class="article-item">
+      <span class="article-num">03</span>
+      <span class="article-title">Mejor software de facturación gratuito para autónomos [sin letra pequeña]</span>
+      <div class="article-meta"><span class="tag tag-green">Comparativa</span><span class="tag tag-amber">2.000 pal.</span></div>
+    </div>
+    <div class="article-item">
+      <span class="article-num">04</span>
+      <span class="article-title">Anfix vs Contasimple: qué diferencias hay y cuál te conviene</span>
+      <div class="article-meta"><span class="tag tag-green">Vs.</span><span class="tag tag-amber">1.800 pal.</span></div>
+    </div>
+    <div class="article-item">
+      <span class="article-num">05</span>
+      <span class="article-title">Las mejores alternativas a Sage para pequeñas empresas en España</span>
+      <div class="article-meta"><span class="tag tag-green">Alternativas</span><span class="tag tag-amber">2.000 pal.</span></div>
+    </div>
+    <div class="article-item">
+      <span class="article-num">06</span>
+      <span class="article-title">Mejor programa de contabilidad para autónomos sin saber contabilidad</span>
+      <div class="article-meta"><span class="tag tag-green">Comparativa</span><span class="tag tag-amber">1.800 pal.</span></div>
+    </div>
+    <div class="article-item">
+      <span class="article-num">07</span>
+      <span class="article-title">Holded vs Factorial: herramientas distintas, ¿cuándo usar cada una?</span>
+      <div class="article-meta"><span class="tag tag-green">Vs.</span><span class="tag tag-amber">1.700 pal.</span></div>
+    </div>
+    <div class="article-item">
+      <span class="article-num">08</span>
+      <span class="article-title">Los mejores CRM para pequeñas empresas y autónomos en España</span>
+      <div class="article-meta"><span class="tag tag-green">Comparativa</span><span class="tag tag-amber">2.500 pal.</span><span class="tag tag-blue">Alta conv.</span></div>
+    </div>
+    <div class="article-item">
+      <span class="article-num">09</span>
+      <span class="article-title">Software de facturación para freelance de diseño: cuál usar en 2025</span>
+      <div class="article-meta"><span class="tag tag-green">Nicho</span><span class="tag tag-amber">1.600 pal.</span></div>
+    </div>
+    <div class="article-item">
+      <span class="article-num">10</span>
+      <span class="article-title">Billin vs Quipu: comparativa completa para elegir bien</span>
+      <div class="article-meta"><span class="tag tag-green">Vs.</span><span class="tag tag-amber">1.700 pal.</span></div>
+    </div>
+    <div class="article-item">
+      <span class="article-num">11</span>
+      <span class="article-title">¿Vale la pena Holded? Review honesta tras 12 meses de uso</span>
+      <div class="article-meta"><span class="tag tag-green">Review</span><span class="tag tag-amber">2.000 pal.</span></div>
+    </div>
+    <div class="article-item">
+      <span class="article-num">12</span>
+      <span class="article-title">Mejor software de TPV para tiendas y comercios pequeños</span>
+      <div class="article-meta"><span class="tag tag-green">Comparativa</span><span class="tag tag-amber">2.200 pal.</span></div>
+    </div>
+    <div class="article-item">
+      <span class="article-num">13</span>
+      <span class="article-title">Software de RRHH para pymes: las 5 mejores opciones del mercado</span>
+      <div class="article-meta"><span class="tag tag-green">Comparativa</span><span class="tag tag-amber">2.000 pal.</span></div>
+    </div>
+    <div class="article-item">
+      <span class="article-num">14</span>
+      <span class="article-title">Alternativas a Excel para llevar la contabilidad de una pyme</span>
+      <div class="article-meta"><span class="tag tag-green">Alternativas</span><span class="tag tag-amber">1.800 pal.</span></div>
+    </div>
+    <div class="article-item">
+      <span class="article-num">15</span>
+      <span class="article-title">Mejor software de facturación para e-commerce en España</span>
+      <div class="article-meta"><span class="tag tag-green">Nicho</span><span class="tag tag-amber">1.900 pal.</span></div>
+    </div>
+    <div class="article-item">
+      <span class="article-num">16</span>
+      <span class="article-title">Comparativa de precios: cuánto cuesta el software de gestión para autónomos</span>
+      <div class="article-meta"><span class="tag tag-green">Precios</span><span class="tag tag-amber">2.000 pal.</span></div>
+    </div>
+    <div class="article-item">
+      <span class="article-num">17</span>
+      <span class="article-title">Qué es Holded y para qué sirve: guía completa 2025</span>
+      <div class="article-meta"><span class="tag tag-green">Marca</span><span class="tag tag-amber">2.200 pal.</span></div>
+    </div>
+    <div class="article-item">
+      <span class="article-num">18</span>
+      <span class="article-title">Software de facturación para sector sanitario: clínicas y consultas</span>
+      <div class="article-meta"><span class="tag tag-green">Nicho</span><span class="tag tag-amber">1.600 pal.</span></div>
+    </div>
+    <div class="article-item">
+      <span class="article-num">19</span>
+      <span class="article-title">Herramientas de gestión de proyectos para agencias y freelances</span>
+      <div class="article-meta"><span class="tag tag-green">Comparativa</span><span class="tag tag-amber">2.100 pal.</span></div>
+    </div>
+    <div class="article-item">
+      <span class="article-num">20</span>
+      <span class="article-title">Software de facturación con factura electrónica integrada: los mejores en 2025</span>
+      <div class="article-meta"><span class="tag tag-green">Pilar</span><span class="tag tag-amber">2.800 pal.</span><span class="tag tag-blue">Trending</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════ SECCIÓN 6 ══════════ -->
+<div class="section">
+  <p class="section-number">Sección 06</p>
+  <h2 class="section-title">Conclusión y Recomendación Final</h2>
+
+  <h3>¿Por qué este nicho merece la pena?</h3>
+
+  <p>Después de analizar el mercado, las métricas de AdSense, las oportunidades de afiliación y la estructura de la competencia, el nicho de <strong>software de facturación y gestión para autónomos y PYMES en España</strong> se posiciona como uno de los proyectos de nicho web más sólidos que se pueden emprender en este momento en el mercado hispanohablante.</p>
+
+  <p>Tiene todos los ingredientes que buscamos: un <strong>catalizador regulatorio</strong> que dispara la demanda (factura electrónica obligatoria), una <strong>audiencia con capacidad económica</strong> (profesionales y empresas), un <strong>ecosistema de monetización diversificado</strong> (AdSense + afiliados + leads + newsletter), y una <strong>competencia de dificultad media</strong> que permite entrar con un presupuesto razonable.</p>
+
+  <p>A diferencia de nichos hipercompetidos como seguros, préstamos personales o hipotecas — donde solo los portales con presupuestos de €50.000+ pueden competir —, este nicho tiene una larga cola de keywords long tail prácticamente virgen que un sitio nuevo puede empezar a cosechar desde los primeros meses.</p>
+
+  <div class="highlight-block">
+    <h3>Los 7 consejos finales para arrancar bien</h3>
+    <ul>
+      <li><strong>Instala Google Search Console desde el día 1</strong> y sube el sitemap inmediatamente. No esperes a tener 20 artículos para indexar.</li>
+      <li><strong>Empieza siempre por las keywords de menor KD</strong> (menos de 15). Un artículo que posiciona en el top 10 en 3 meses aporta más motivación y datos que 10 artículos que no posicionan.</li>
+      <li><strong>Prioriza el clúster de «Comparativas» y «Factura electrónica»</strong> en los primeros 60 días. Son los que más ingresos generan por visita.</li>
+      <li><strong>No te apresures con AdSense</strong>. Solicita la aprobación cuando tengas 25-30 artículos de calidad, política de privacidad, aviso legal y página «Sobre nosotros» completas. Una solicitud rechazada deja marca.</li>
+      <li><strong>Construye el interlinking desde el principio</strong>. Cada artículo nuevo debe enlazar a 2-3 artículos relevantes ya publicados. Esto acelera enormemente el posicionamiento.</li>
+      <li><strong>Negocia el programa de afiliados de Holded y Quipu antes de publicar</strong> tus primeras comparativas. Ambos tienen programas de partners directos más generosos que los de redes generalistas.</li>
+      <li><strong>Trata el dominio como un activo a largo plazo</strong>, no como un experimento. Los dominios con 18-24 meses de antigüedad y contenido consistente se valorizan de forma exponencial.</li>
+    </ul>
+  </div>
+
+  <h3>Recomendación final</h3>
+
+  <p>Si tuviese que resumir este informe en una sola frase sería: <em>este es el momento exacto para entrar en este nicho</em>. La regulación de factura electrónica está creando una ventana de oportunidad que se cerrará en 2-3 años cuando los grandes portales de comparativas generalistas (como Capterra o GetApp) terminen de cubrir todas las keywords long tail en español.</p>
+
+  <p>Con un presupuesto inicial de entre €1.700 (versión lean) y €4.100 (versión estándar), y una dedicación de 10-15 horas semanales durante el primer año, es completamente realista construir un activo digital que genere €800-1.500/mes en el mes 18, con potencial de escalar hasta €3.000-5.000/mes en el mes 36.</p>
+
+  <div class="callout callout-success">
+    <p class="callout-title">✅ Veredicto final del nicho</p>
+    <p><strong>APTO — Recomendado con alta convicción.</strong> Potencial de ingresos real, audiencia cualificada, catalizador regulatorio activo, competencia atacable y múltiples fuentes de monetización. Es un proyecto que construyes una vez y que trabaja para ti durante años.</p>
+  </div>
+</div>
+</div><!-- /container -->
+
+<footer>
+  <strong>Informe de Consultoría SEO / AdSense</strong> · Nicho: Software de Facturación para Autónomos y PYMES · España 2025<br>
+  Todos los datos de CPC, RPM y volúmenes de búsqueda son estimaciones orientativas basadas en herramientas SEO públicas. Verificar siempre con datos actualizados antes de invertir.
+</footer>
+
+</body>
+</html>
